@@ -16,36 +16,50 @@ body {
 
 .header {
   max-width: 100%;
+  padding: 1rem;
 }
 
 .nav {
   display: flex;
+  align-items: center;
 }
-
 
 .logo img {
   display: block;
   height: 48px;
   width: auto;
 }
+
+.burger {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.burger span {
+  width: 24px;
+  height: 2px;
+  background: white;
+}
   
 .menu {
   margin: 0;
   padding: 0;
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 0.5rem;
-  align-items: stretch;
+  margin-top: 1rem;
 }
 
-.menu li {
+.menu.is-open {
   display: flex;
 }
-
-.menu li a {
-  display: block;
-  font-size: 1.1rem;
-  padding: 0.6rem 1rem;
+.menu a {
+  padding: 0.6rem;
   text-align: center;
 }
 
@@ -68,25 +82,23 @@ body {
 }
 
 .footer {
-  font-size: 0.85rem;
-  padding: 0.4rem 1rem;
+  font-size: 0.8rem;
+  background: rgba(0, 0, 0, 0.85);
 }
+
 .footer_content {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  gap: 0.3rem;
+
 }
 
 .footer_content ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
   list-style: none;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
 }
-
-
 
 /*STYLES*/
 
@@ -115,6 +127,7 @@ body {
   .hero.is-active {
     flex-direction: row;
     gap: 4rem;
+    align-items: start;
   }
 
   .hero_content {
@@ -123,6 +136,7 @@ body {
 
   .footer {
     padding: 0.8rem 2rem;
+    font-size: 0.85rem;
   }
 
   /*STYLES*/
