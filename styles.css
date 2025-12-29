@@ -1,0 +1,120 @@
+h1 { font-weight: 700; font-size: 2rem;}
+h2 { font-weight: 600; font-size: 1.5rem;}
+p { font-weight: 500; font-size: 1rem;}
+a { text-decoration: none; color: inherit; line-height: 1.6;}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: white;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background: url(assets/background.png) center / cover no-repeat;
+  margin: 0;
+  
+}
+
+.header {
+  max-width: 100%;
+}
+
+.nav {
+  display: flex;
+}
+
+
+.logo img {
+  display: block;
+  height: 48px;
+  width: auto;
+}
+  
+.menu {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: stretch;
+  gap: 60px;
+  margin-left: auto;
+}
+
+.menu li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu li a {
+  display: block;
+  font-size: 1.2rem;
+  padding: 0.4rem 1.2rem;;
+}
+
+.hero {
+  display: none;
+}
+
+.hero.is-active {
+  display: flex;
+  align-items: start;
+  padding: clamp(4rem, 10vw, 8rem);
+}
+
+.hero_content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.5rem;
+}
+
+.footer {
+  max-width: 100%;
+  padding: 0.1rem 2rem;
+}
+.footer_content {
+  display: flex;
+  justify-content: center;
+}
+
+.footer_content ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+
+
+/*STYLES*/
+
+.glass_nav {
+  backdrop-filter: blur(5px);
+  background: rgba(10, 10, 10, 0.289);
+}
+
+.glass_content {
+  backdrop-filter: blur(14px);
+  background: rgba(0, 0, 0, 0.78);
+}
+
+.floatinefect {
+  border-radius: 1px;
+  box-shadow: 0 20px 30px rgb(0, 0, 0);
+  border: 2px solid rgba(35, 35, 35, 0.122);
+}
+
+.interactive {
+  padding: 0.4rem 1.2rem;
+  border-radius: 5px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 30px rgba(64, 64, 64, 0.6);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.interactive:hover {
+  background: radial-gradient(circle, rgb(1, 49, 105), rgb(2, 84, 179), rgb(3, 104, 219));
+  transform: scale(0.97);
+}
