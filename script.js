@@ -37,3 +37,11 @@ menuLinks.forEach(link => {
     document.body.classList.remove('no-scroll');
   });
 });
+
+//set active link based on current page
+menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        menuLinks.forEach(l => l.classList.remove('active'));
+        link.classList.add('active');
+    });
+});
