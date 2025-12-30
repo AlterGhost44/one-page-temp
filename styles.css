@@ -3,6 +3,10 @@ h2 { font-weight: 600;}
 p { font-weight: 500; font-size: 1rem; line-height: 1.6;}
 a { text-decoration: none; color: inherit;}
 
+:root {
+  --header-h: 64px;
+}
+
 body {
   font-family: 'Inter', sans-serif;
   color: white;
@@ -15,6 +19,7 @@ body {
 }
 
 .header {
+  position: relative;
   max-width: 100%;
   padding: 1rem;
 }
@@ -31,28 +36,31 @@ body {
 }
 
 .burger {
-  margin-left: auto;
   display: flex;
   flex-direction: column;
   gap: 4px;
   background: none;
   border: none;
   cursor: pointer;
+  color: white;
 }
 
-.burger span {
-  width: 24px;
-  height: 2px;
-  background: white;
+.burger.is-active{
+  opacity: 0.7;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
   
 .menu {
-  margin: 0;
-  padding: 0;
+  position: fixed;
+  top: var(--header-h);
+  height: calc(100vh - var(--header-h));
   display: none;
   flex-direction: column;
-  gap: 0.5rem;
-  margin-top: 1rem;
+  left: 0;
+  right: 0;
 }
 
 .menu.is-open {

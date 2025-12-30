@@ -19,7 +19,21 @@ tabs.forEach(tab => {
 //mobile menu toggle
 const burger = document.querySelector('.burger');
 const menu = document.querySelector('.menu');
+const menuLinks = document.querySelectorAll('.menu a');
 
 burger.addEventListener('click', () => {
-    menu.classList.toggle('is-open');
+  const isOpen = menu.classList.toggle('is-open');
+  burger.classList.toggle('is-active', isOpen);
+  document.body.classList.toggle('no-scroll', isOpen);
+});
+
+
+menuLinks.forEach(link => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    menu.classList.remove('is-open');
+    burger.classList.remove('is-active');
+    document.body.classList.remove('no-scroll');
+  });
 });
