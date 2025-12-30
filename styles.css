@@ -150,7 +150,6 @@ body {
   }
   .menu {
     position: static;
-    display: flex;
     flex-direction: row;
 
     height: auto;
