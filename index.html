@@ -3,93 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hydraulika Ciechocinek</title>
-    
-    <script src="script.js" defer></script>
+    <meta name="description" content="Hydraulik Ciechocinek – awaryjne naprawy 24/7, instalacje i serwis. Działamy w Ciechocinku i okolicach. Sprawdź ofertę i zadzwoń.">
+    <meta name="theme-color" content="#0a1628">
+    <title>Hydraulik Ciechocinek – usługi hydrauliczne 24/7 | Naprawy i instalacje</title>
 
-    <link rel="icon" href="assets/favicon.svg" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=BBH+Hegarty&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <header class="header">
-        <div class="nav glass_nav">
-            <div class="logo">
-                <img src="assets/logo.png" alt="Hydraulika Ciechocinek Logo">
-            </div>
+    <header class="header" role="banner">
+        <div class="nav nav--glass">
+            <a href="index.html" class="logo" aria-label="Strona główna – Hydraulik Ciechocinek">
+                <img src="assets/logo.png" alt="" width="160" height="48" fetchpriority="high">
+            </a>
 
-            <button class="burger cta" aria-label="Otwórz menu">
-            ☰
+            <button type="button" class="burger" aria-label="Otwórz menu" aria-expanded="false">
+                <span class="burger-bar"></span>
+                <span class="burger-bar"></span>
+                <span class="burger-bar"></span>
             </button>
 
-            <nav class="menu">
-               <a href="#" class="interactive floatinefect" data-target="home">Strona główna</a>
-               <a href="#" class="interactive floatinefect" data-target="services">Usługi</a>
-               <a href="#" class="interactive floatinefect" data-target="contact">Kontakt</a>
-               <a href="#" class="interactive floatinefect" data-target="about">O nas</a>
+            <nav class="menu" aria-label="Nawigacja główna">
+                <a href="index.html" class="menu__link menu__link--active">Strona główna</a>
+                <a href="uslugi.html" class="menu__link">Usługi</a>
+                <a href="kontakt.html" class="menu__link">Kontakt</a>
+                <a href="onas.html" class="menu__link">O nas</a>
             </nav>
         </div>
     </header>
 
-    <section id="home" class="hero is-active">
-        <div class="hero_content glass_content floatinefect">
-          <h2>Profesjonalne usługi hydrauliczne w Ciechocinku</h2>
-          <p>24/7 awaryjne naprawy, instalacje i konserwacje</p>
-          <button class="phone-btn interactive floatinefect" data-phone="1223456789">Zadzwoń teraz</button>
-        </div>
-    </section>
-    <section id="services" class="hero">
-        <div class="hero_content glass_content floatinefect">
-            <h2>Nasze usługi</h2>
-            <ul>
-                <li>Awaryjne naprawy</li>
-                <li>Instalacje hydrauliczne</li>
-                <li>Konserwacje systemów</li>
-            </ul>
-        </div>
-    </section>
-    <section id="contact" class="hero">
-        <div class="hero_content glass_content floatinefect">
-            <h2>Skontaktuj się z nami</h2>
-            <p>Telefon: 123-456-789</p>
-            <p>Email: hydraulika-ciechocinek@jakaspoczta.pl</p>
-            <h3>Lub przez formularz kontaktowy</h3>
-            <button> class="go-to-form interactive floatinefect">Przejdź do formularza</button>
-        </div>
-    </section>
-    <section id="about" class="hero">
-        <div class="hero_content glass_content floatinefect">
-            <h2>O nas</h2>
-            <p>Doświadczeni hydraulicy z Ciechocinka, gotowi pomóc w każdej sytuacji.</p>
-        </div>
-    </section>
-    <section id="form" class="contact_form">
-        <div class="form_content glass_content floatinefect">
-            <h2>Formularz kontaktowy</h2>
-            <form action="https://formspree.io/f/mzdzbpgp" method="POST">
-                <label for="name">Imię i nazwisko:</label>
-                <input type="text" id="name" name="name" required>
+    <main id="main-content" class="main">
+        <section id="home" class="hero-section" aria-labelledby="hero-heading">
+            <div class="hero-section__inner">
+                <h1 id="hero-heading" class="hero__title">Profesjonalny hydraulik w Ciechocinku</h1>
+                <p class="hero__lead">Awaryjne wyjazdy 24/7, solidne instalacje i przeglądy. Działamy w Ciechocinku i okolicach – szybko, rzetelnie i po uczciwej cenie.</p>
+                <a href="tel:+48123456789" class="btn btn--primary btn--phone">Zadzwoń: 123 456 789</a>
+            </div>
+        </section>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Wiadomość:</label><br>
-                <textarea id="message" name="message" required></textarea>
-
-                <button type="submit" class="interactive">Wyślij</button>
-                <a href="#" class="back_home interactive">Powrót</a>
-            </form>
+        <div class="cards-wrap">
+            <section id="services-preview" class="card" aria-labelledby="preview-heading">
+                <div class="card__inner">
+                    <h2 id="preview-heading" class="card__title">Usługi</h2>
+                    <p class="card__text">Naprawy awaryjne, instalacje wodno-kanalizacyjne i CO, przeglądy i konserwacja. Materiały z gwarancją, wyceny bez zobowiązań.</p>
+                    <a href="uslugi.html" class="btn btn--secondary card__btn">Zobacz ofertę</a>
+                </div>
+            </section>
+            <section id="contact-preview" class="card" aria-labelledby="contact-preview-heading">
+                <div class="card__inner">
+                    <h2 id="contact-preview-heading" class="card__title">Kontakt</h2>
+                    <p class="card__text">Zadzwoń lub napisz – w pilnych sprawach wyjeżdżamy także w weekendy. Na formularz odpowiadamy w ciągu kilku godzin.</p>
+                    <p class="card__contact"><a href="tel:+48123456789">123 456 789</a></p>
+                    <a href="kontakt.html" class="btn btn--secondary card__btn">Formularz kontaktowy</a>
+                </div>
+            </section>
+            <section id="about-preview" class="card" aria-labelledby="about-preview-heading">
+                <div class="card__inner">
+                    <h2 id="about-preview-heading" class="card__title">O nas</h2>
+                    <p class="card__text">Doświadczenie, uczciwe wyceny i terminowość. Przed rozpoczęciem prac przedstawiamy zakres i koszt – bez ukrytych dopłat.</p>
+                    <a href="onas.html" class="btn btn--secondary card__btn">Poznaj nas</a>
+                </div>
+            </section>
         </div>
-    </section>
-    <footer class="footer glass_nav">
-        <nav class="footer_content">
-            <ul>
-                <li><p>&copy; 2024 Hydraulika Ciechocinek. Wszelkie prawa zastrzeżone.</p></li>
-                <li><a class="" href="privacy.html">Polityka prywatności</a>    |   <a class="" href="terms.html">Warunki użytkowania</a></li>
-            </ul>
-        </nav>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="footer__inner">
+            <p class="footer__copy">&copy; <span id="year">2025</span> Hydraulik Ciechocinek. Wszelkie prawa zastrzeżone.</p>
+            <p class="footer__links">
+                <a href="privacy.html">Polityka prywatności</a>
+                <span aria-hidden="true"> · </span>
+                <a href="terms.html">Warunki użytkowania</a>
+            </p>
+        </div>
     </footer>
 </body>
 </html>

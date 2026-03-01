@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kontakt – Hydraulik Ciechocinek. Telefon, e-mail i formularz. Wyjazdy awaryjne w Ciechocinku i okolicy.">
+    <meta name="theme-color" content="#0a1628">
+    <title>Kontakt – Hydraulik Ciechocinek | Telefon, e-mail, formularz</title>
+
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header" role="banner">
+        <div class="nav nav--glass">
+            <a href="index.html" class="logo" aria-label="Strona główna – Hydraulik Ciechocinek">
+                <img src="assets/logo.png" alt="" width="160" height="48">
+            </a>
+
+            <button type="button" class="burger" aria-label="Otwórz menu" aria-expanded="false">
+                <span class="burger-bar"></span>
+                <span class="burger-bar"></span>
+                <span class="burger-bar"></span>
+            </button>
+
+            <nav class="menu" aria-label="Nawigacja główna">
+                <a href="index.html" class="menu__link">Strona główna</a>
+                <a href="uslugi.html" class="menu__link">Usługi</a>
+                <a href="kontakt.html" class="menu__link menu__link--active">Kontakt</a>
+                <a href="onas.html" class="menu__link">O nas</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" class="page">
+        <div class="page__content">
+            <header class="page__header">
+                <h1 class="page__title">Skontaktuj się z nami</h1>
+                <p class="page__lead">Masz awarię lub pytanie o wycenę? Zadzwoń – w pilnych sprawach wyjeżdżamy nawet w weekendy i wieczorami. Na telefon odpowiadamy na bieżąco; na e-mail i formularz – zwykle w ciągu kilku godzin w dni robocze. Dojazd w ramach Ciechocinka i okolic.</p>
+            </header>
+
+            <section class="content-block contact-info" aria-labelledby="dane-heading">
+                <h2 id="dane-heading">Dane kontaktowe</h2>
+                <div class="contact-info__grid">
+                    <div class="contact-info__item">
+                        <h3>Telefon</h3>
+                        <p><a href="tel:+48123456789">123 456 789</a></p>
+                        <p class="contact-info__note">Interwencje awaryjne – także w weekendy i wieczorami.</p>
+                    </div>
+                    <div class="contact-info__item">
+                        <h3>E-mail</h3>
+                        <p><a href="mailto:hydraulika-ciechocinek@jakaspoczta.pl">hydraulika-ciechocinek@jakaspoczta.pl</a></p>
+                        <p class="contact-info__note">Odpowiadamy zwykle w ciągu kilku godzin w dni robocze.</p>
+                    </div>
+                    <div class="contact-info__item">
+                        <h3>Obszar działania</h3>
+                        <p>Ciechocinek i okolice</p>
+                        <p class="contact-info__note">Dojazd w ramach regionu – szczegóły przy zapytaniu.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-block" aria-labelledby="form-heading">
+                <h2 id="form-heading">Wyślij wiadomość</h2>
+                <p>Opisz swoją sprawę: awarię, zapytanie o wycenę albo preferowany termin. Podaj numer telefonu, jeśli wolisz kontakt telefoniczny – oddzwonimy. Wiadomości z formularza obsługujemy w dni robocze; w pilnych awariach lepiej zadzwoń bezpośrednio.</p>
+                <form action="https://formspree.io/f/mzdzbpgp" method="POST" class="form form--page">
+                    <label for="name">Imię i nazwisko</label>
+                    <input type="text" id="name" name="name" required autocomplete="name">
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required autocomplete="email">
+
+                    <label for="phone">Telefon (opcjonalnie)</label>
+                    <input type="tel" id="phone" name="phone" autocomplete="tel">
+
+                    <label for="message">Wiadomość</label>
+                    <textarea id="message" name="message" required rows="5" minlength="10" placeholder="Opisz problem lub zakres prac..."></textarea>
+
+                    <button type="submit" class="btn btn--primary">Wyślij wiadomość</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="footer__inner">
+            <p class="footer__copy">&copy; <span id="year">2025</span> Hydraulik Ciechocinek. Wszelkie prawa zastrzeżone.</p>
+            <p class="footer__links">
+                <a href="privacy.html">Polityka prywatności</a>
+                <span aria-hidden="true"> · </span>
+                <a href="terms.html">Warunki użytkowania</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
