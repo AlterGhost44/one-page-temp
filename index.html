@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hydraulik Ciechocinek – awaryjne naprawy 24/7, instalacje i serwis. Działamy w Ciechocinku i okolicach. Sprawdź ofertę i zadzwoń.">
+    <meta name="description" content="Hydraulik Ciechocinek – szybka reakcja na awarie 24/7. Twój dom bezpieczny. Zaleje, pęknięta rura, brak ciepła – reagujemy od razu. Zadzwoń.">
     <meta name="theme-color" content="#0a1628">
     <title>Hydraulik Ciechocinek – usługi hydrauliczne 24/7 | Naprawy i instalacje</title>
 
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
@@ -19,30 +19,57 @@
     <header class="header" role="banner">
         <div class="nav nav--glass">
             <a href="index.html" class="logo" aria-label="Strona główna – Hydraulik Ciechocinek">
-                <img src="assets/logo.png" alt="" width="160" height="48" fetchpriority="high">
+                <img src="assets/logo.png" alt="Hydraulik Ciechocinek" width="160" height="48" fetchpriority="high">
             </a>
 
-            <button type="button" class="burger" aria-label="Otwórz menu" aria-expanded="false">
+            <button type="button" class="burger" aria-label="Otwórz menu" aria-expanded="false" aria-controls="menu-mobile">
                 <span class="burger-bar"></span>
                 <span class="burger-bar"></span>
                 <span class="burger-bar"></span>
             </button>
 
-            <nav class="menu" aria-label="Nawigacja główna">
+            <nav class="menu-desktop" aria-label="Nawigacja główna">
                 <a href="index.html" class="menu__link menu__link--active">Strona główna</a>
-                <a href="uslugi.html" class="menu__link">Usługi</a>
-                <a href="kontakt.html" class="menu__link">Kontakt</a>
-                <a href="onas.html" class="menu__link">O nas</a>
+                <a href="emergencies.html" class="menu__link">Awarie</a>
+                <a href="services.html" class="menu__link">Usługi</a>
+                <a href="contact.html" class="menu__link">Kontakt</a>
+                <a href="about.html" class="menu__link">O nas</a>
             </nav>
         </div>
     </header>
 
+    <nav id="menu-mobile" class="menu-mobile" aria-label="Menu mobilne" aria-hidden="true">
+        <a href="index.html" class="menu__link menu__link--active">Strona główna</a>
+        <a href="awarie.html" class="menu__link">Awarie</a>
+        <a href="uslugi.html" class="menu__link">Usługi</a>
+        <a href="kontakt.html" class="menu__link">Kontakt</a>
+        <a href="onas.html" class="menu__link">O nas</a>
+    </nav>
+
     <main id="main-content" class="main">
         <section id="home" class="hero-section" aria-labelledby="hero-heading">
             <div class="hero-section__inner">
-                <h1 id="hero-heading" class="hero__title">Profesjonalny hydraulik w Ciechocinku</h1>
-                <p class="hero__lead">Awaryjne wyjazdy 24/7, solidne instalacje i przeglądy. Działamy w Ciechocinku i okolicach – szybko, rzetelnie i po uczciwej cenie.</p>
-                <a href="tel:+48123456789" class="btn btn--primary btn--phone">Zadzwoń: 123 456 789</a>
+                <p class="hero__badge">Interwencja 24/7 w Ciechocinku i okolicy</p>
+                <h1 id="hero-heading" class="hero__title">Twój dom bezpieczny. Awaria? Reagujemy od razu.</h1>
+                <p class="hero__lead">Zalanie, pęknięta rura, brak ciepła – w takich chwilach liczy się każda minuta. Nie zostawiamy Cię z problemem: wyjeżdżamy szybko, naprawiamy solidnie i dbamy o to, żebyś mógł znów czuć się w domu bezpiecznie.</p>
+                <div class="hero__cta">
+                    <a href="tel:+48123456789" class="btn btn--primary btn--phone btn--large">Zadzwoń teraz: 123 456 789</a>
+                    <p class="hero__cta-note">Awaria? Dzwonisz – jedziemy. Bez zbędnych formalności.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="why-section" aria-labelledby="why-heading">
+            <div class="why-section__inner">
+                <h2 id="why-heading" class="why-section__title">Dlaczego my</h2>
+                <p class="why-section__lead">Bo Twój spokój i bezpieczeństwo domu są dla nas najważniejsze.</p>
+                <ul class="why-list">
+                    <li><strong>Szybka reakcja</strong> – w awarii nie każemy czekać. Priorytetem jest zatrzymanie szkody i przywrócenie normalności.</li>
+                    <li><strong>Bezpieczeństwo na pierwszym miejscu</strong> – doprowadzamy instalację do stanu bezpiecznego i zostawiamy porządek.</li>
+                    <li><strong>Uczciwość i jasne zasady</strong> – przed pracami mówimy, co zrobimy i ile to kosztuje. Żadnych niespodzianek na końcu.</li>
+                    <li><strong>Doświadczenie i gwarancja</strong> – korzystamy ze sprawdzonych rozwiązań, a wykonane prace objęte są gwarancją.</li>
+                </ul>
+                <a href="awarie.html" class="btn btn--primary">Awaria? Sprawdź, jak działamy</a>
             </div>
         </section>
 
@@ -51,7 +78,7 @@
                 <div class="card__inner">
                     <h2 id="preview-heading" class="card__title">Usługi</h2>
                     <p class="card__text">Naprawy awaryjne, instalacje wodno-kanalizacyjne i CO, przeglądy i konserwacja. Materiały z gwarancją, wyceny bez zobowiązań.</p>
-                    <a href="uslugi.html" class="btn btn--secondary card__btn">Zobacz ofertę</a>
+                    <a href="services.html" class="btn btn--secondary card__btn">Zobacz ofertę</a>
                 </div>
             </section>
             <section id="contact-preview" class="card" aria-labelledby="contact-preview-heading">
@@ -59,14 +86,14 @@
                     <h2 id="contact-preview-heading" class="card__title">Kontakt</h2>
                     <p class="card__text">Zadzwoń lub napisz – w pilnych sprawach wyjeżdżamy także w weekendy. Na formularz odpowiadamy w ciągu kilku godzin.</p>
                     <p class="card__contact"><a href="tel:+48123456789">123 456 789</a></p>
-                    <a href="kontakt.html" class="btn btn--secondary card__btn">Formularz kontaktowy</a>
+                    <a href="contact.html" class="btn btn--secondary card__btn">Formularz kontaktowy</a>
                 </div>
             </section>
             <section id="about-preview" class="card" aria-labelledby="about-preview-heading">
                 <div class="card__inner">
                     <h2 id="about-preview-heading" class="card__title">O nas</h2>
                     <p class="card__text">Doświadczenie, uczciwe wyceny i terminowość. Przed rozpoczęciem prac przedstawiamy zakres i koszt – bez ukrytych dopłat.</p>
-                    <a href="onas.html" class="btn btn--secondary card__btn">Poznaj nas</a>
+                    <a href="about.html" class="btn btn--secondary card__btn">Poznaj nas</a>
                 </div>
             </section>
         </div>

@@ -10,7 +10,7 @@
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
@@ -19,23 +19,32 @@
     <header class="header" role="banner">
         <div class="nav nav--glass">
             <a href="index.html" class="logo" aria-label="Strona główna – Hydraulik Ciechocinek">
-                <img src="assets/logo.png" alt="" width="160" height="48">
+                <img src="assets/logo.png" alt="Hydraulik Ciechocinek" width="160" height="48">
             </a>
 
-            <button type="button" class="burger" aria-label="Otwórz menu" aria-expanded="false">
+            <button type="button" class="burger" aria-label="Otwórz menu" aria-expanded="false" aria-controls="menu-mobile">
                 <span class="burger-bar"></span>
                 <span class="burger-bar"></span>
                 <span class="burger-bar"></span>
             </button>
 
-            <nav class="menu" aria-label="Nawigacja główna">
+            <nav class="menu-desktop" aria-label="Nawigacja główna">
                 <a href="index.html" class="menu__link">Strona główna</a>
-                <a href="uslugi.html" class="menu__link">Usługi</a>
-                <a href="kontakt.html" class="menu__link">Kontakt</a>
-                <a href="onas.html" class="menu__link menu__link--active">O nas</a>
+                <a href="emergencies.html" class="menu__link">Awarie</a>
+                <a href="services.html" class="menu__link">Usługi</a>
+                <a href="contact.html" class="menu__link">Kontakt</a>
+                <a href="about.html" class="menu__link menu__link--active">O nas</a>
             </nav>
         </div>
     </header>
+
+    <nav id="menu-mobile" class="menu-mobile" aria-label="Menu mobilne" aria-hidden="true">
+        <a href="index.html" class="menu__link">Strona główna</a>
+        <a href="emergencies.html" class="menu__link">Awarie</a>
+        <a href="services.html" class="menu__link">Usługi</a>
+        <a href="contact.html" class="menu__link">Kontakt</a>
+        <a href="about.html" class="menu__link menu__link--active">O nas</a>
+    </nav>
 
     <main id="main-content" class="page">
         <div class="page__content">
@@ -73,7 +82,7 @@
                 <h2>Masz pytanie lub potrzebujesz wyceny?</h2>
                 <p>Skontaktuj się z nami – chętnie porozmawiamy i zaproponujemy rozwiązanie dopasowane do Twojej sytuacji.</p>
                 <a href="tel:+48123456789" class="btn btn--primary btn--phone">Zadzwoń: 123 456 789</a>
-                <a href="kontakt.html" class="btn btn--secondary">Formularz kontaktowy</a>
+                <a href="contact.html" class="btn btn--secondary">Formularz kontaktowy</a>
             </section>
         </div>
     </main>
